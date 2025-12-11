@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Full Profile Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔍 GitHub Full Profile Finder</h1>
+
+        <input id="searchInput" type="text" placeholder="Enter GitHub username..." />
+
+        <p id="loading" class="hidden">Loading...</p>
+        <p id="error" class="hidden error"></p>
+
+        <div id="profileCard" class="profile hidden">
+
+            <img id="avatar" class="avatar">
+
+            <h2 id="name"></h2>
+            <p id="username"></p>
+            <p id="bio"></p>
+
+            <div class="stats">
+                <p><strong>Followers:</strong> <span id="followers"></span></p>
+                <p><strong>Following:</strong> <span id="following"></span></p>
+                <p><strong>Public Repos:</strong> <span id="repos"></span></p>
+            </div>
+
+            <div class="details">
+                <p><strong>Location:</strong> <span id="location"></span></p>
+                <p><strong>Company:</strong> <span id="company"></span></p>
+                <p><strong>Twitter:</strong> <span id="twitter"></span></p>
+                <p><strong>Website:</strong> <span id="blog"></span></p>
+                <p><strong>Joined:</strong> <span id="joined"></span></p>
+            </div>
+
+            <a id="profileLink" target="_blank" class="btn">View GitHub Profile</a>
+
+            <h3>📁 Latest Repositories</h3>
+            <ul id="repoList" class="repo-list"></ul>
+
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

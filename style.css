@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e9efff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.profile {
+    margin-top: 20px;
+    background: #d9e8ff;
+    padding: 20px;
+    border-radius: 12px;
+    animation: fadeIn .3s ease-in-out;
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.stats, .details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.stats p, .details p {
+    margin: 5px 0;
+}
+
+.repo-list {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.repo-list li {
+    padding: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background: #0070ff;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
